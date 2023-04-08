@@ -11,9 +11,9 @@
   <title>Frontend Mentor | Expenses chart component</title>
 
   <style>
-    * {
+    /* * {
       outline: dotted 2px teal;
-    }
+    } */
     body {
       font-size: 18px;
       font-family: "DM Sans";
@@ -22,6 +22,38 @@
       color:rgb(65, 9, 9);
     }
 
+    .balance {
+      background-color: rgb(250, 134, 134);
+      border-radius: 10px;
+      padding:20px;
+      margin:10px;
+    }
+
+    .chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin:10px;
+    }
+
+    .chart h4 {
+      text-align: center;
+    }
+
+    .metrics {
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid gray;
+    }
+
+    .total, .percentage {
+      padding: 10px;
+    }
+
+    footer {
+      margin:20px;
+      text-align: center;
+    }
     @media screen and (min-width: 375px) {
       
     }
@@ -33,18 +65,28 @@
   </style>
 </head>
 <body>
-
-  <h5>My balance $921.48</h5>
-  <h4>Spending - Last 7 days</h4>
-
-  <h5>Total this month $478.33</h5>
-
-  <h5>+2.4% from last month</h5>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/er1927">Elizabeth Roberts</a>.
+  <div class="container">
+    <div class="balance">
+      <h5>My balance <br> $921.48</h5>
+    </div>
+    <div class="chart">
+      <h4>Spending - Last 7 days</h4>
+      <div class="metrics">
+        <div class="total">
+          <h5>Total this month <br> $478.33</h5>
+        </div>
+        <div class="percentage">
+          <h5>+2.4% <br> from last month</h5>
+        </div>
+      </div>
+    </div>
   </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="https://github.com/er1927">Elizabeth Roberts</a>.
+    </div>
+  </footer>
   
 </body>
 </html>
