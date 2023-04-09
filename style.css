@@ -4,6 +4,7 @@ body {
     margin:20px;
     background-color: rgb(252, 237, 210);
     color:rgb(65, 9, 9);
+    min-height: 100vh;
 }
   
 .balance {
