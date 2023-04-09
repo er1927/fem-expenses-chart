@@ -46,5 +46,36 @@ const data = await res.json();
     columnSun.style.height = (parseInt(data[6]["amount"]) + "px");;
     }
   assignData();
+
+
 };
 getData();   
+
+function changeBarColor() {
+    const d = new Date();
+    let day= d.getDay()
+
+    if (day === 0) {
+        columnSun.style.backgroundColor = "lightblue"
+    }
+    else if (day === 1) {
+        columnMon.style.backgroundColor = "lightblue"
+    }
+    else if (day === 2) {
+        columnTue.style.backgroundColor = "lightblue"
+    }
+    else if (day === 3) {
+        columnWed.style.backgroundColor = "lightblue"
+    }
+    else if (day === 4) {
+        columnThu.style.backgroundColor = "lightblue"
+    }
+    else if (day === 5) {
+        columnFri.style.backgroundColor = "lightblue"
+    }
+    else {
+        columnSat.style.backgroundColor = "lightblue"
+    }
+}
+changeBarColor();
+
