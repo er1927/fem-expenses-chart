@@ -15,7 +15,7 @@
       outline: dotted 2px teal;
     } */
     body {
-      font-size: 18px;
+      font-size: 16px;
       font-family: "DM Sans";
       margin:20px;
       background-color: rgb(245, 211, 150);
@@ -30,10 +30,10 @@
     }
 
     .chart {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin:10px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin:10px;
     }
 
     .chart h4 {
@@ -61,37 +61,39 @@
       border-top: 2px solid gray;
     }
 
-    .total, .percentage {
-      padding: 10px;
+    span {
+      font-size: 20px;
+      line-height: 30px; 
+      font-weight:700;
+    }
+    .percentage {
+      text-align: right;
     }
 
     footer {
       margin:20px;
       text-align: center;
     }
+
     @media screen and (min-width: 375px) {
       body {
         display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
       
       .container {
-      width:330px;
+        width:330px;
       }
     }
-
-    @media screen and (min-width: 1440px) {
-      
-    }
-
+    
   </style>
 </head>
 <body>
   <div class="container">
     <div class="balance">
-      <h5>My balance <br> $921.48</h5>
+      <h5>My balance <br><span>$921.48</span></h5>
     </div>
     <div class="chart">
       <h4>Spending - Last 7 days</h4>
@@ -106,10 +108,10 @@
       </div>
       <div class="metrics">
         <div class="total">
-          <h5>Total this month <br> $478.33</h5>
+          <p>Total this month <br><span>$478.33</span></p>
         </div>
         <div class="percentage">
-          <h5>+2.4% <br> from last month</h5>
+          <p><span>+2.4%</span> <br> from last month</p>
         </div>
       </div>
     </div>
