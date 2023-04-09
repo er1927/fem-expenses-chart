@@ -48,6 +48,13 @@
       color:gray;
     }
 
+    label {
+      background-color: rgb(65, 9, 9);
+      color: white;
+      border-radius: 5px;
+      line-height: 20px;
+    }
+
     .metrics {
       display: flex;
       justify-content: space-between;
@@ -80,13 +87,13 @@
     <div class="chart">
       <h4>Spending - Last 7 days</h4>
       <div class="bar-chart">
-        <div><p>mon</p></div>
-        <div><p>tue</p></div>
-        <div><p>wed</p></div>
-        <div><p>thu</p></div>
-        <div><p>fri</p></div>
-        <div><p>sat</p></div>
-        <div><p>sun</p></div>
+        <div><label id="mon-num"></label><p id="mon">mon</p></div>
+        <div><label id="tue-num"></label><p id="tue">tue</p></div>
+        <div><label id="wed-num"></label><p id="wed">wed</p></div>
+        <div><label id="thu-num"></label><p id="thu">thu</p></div>
+        <div><label id="fri-num"></label><p id="fri">fri</p></div>
+        <div><label id="sat-num"></label><p id="sat">sat</p></div>
+        <div><label id="sun-num"></label><p id="sun">sun</p></div>
       </div>
       <div class="metrics">
         <div class="total">
@@ -104,6 +111,40 @@
       Coded by <a href="https://github.com/er1927">Elizabeth Roberts</a>.
     </div>
   </footer>
-  
+  <script>
+    const mon = document.getElementById("mon")
+    const tue = document.getElementById("tue")
+    const wed = document.getElementById("wed")
+    const thu = document.getElementById("thu")
+    const fri = document.getElementById("fri")
+    const sat = document.getElementById("sat")
+    const sun = document.getElementById("sun")
+
+    const getData = async function () {
+    const res = await fetch("/data.json");
+    const data = await res.json();
+    };
+    getData();
+
+    
+    function sortData() {
+      mon.addEventListener("mouseover", () => document.getElementById("mon-num").innerHTML= "$$$")
+      mon.addEventListener("mouseleave", () => document.getElementById("mon-num").innerHTML= "")
+      tue.addEventListener("mouseover", () => document.getElementById("tue-num").innerHTML= "$$$")
+      tue.addEventListener("mouseleave", () => document.getElementById("tue-num").innerHTML= "")
+      wed.addEventListener("mouseover", () => document.getElementById("wed-num").innerHTML= "$$$")
+      wed.addEventListener("mouseleave", () => document.getElementById("wed-num").innerHTML= "")
+      thu.addEventListener("mouseover", () => document.getElementById("thu-num").innerHTML= "$$$")
+      thu.addEventListener("mouseleave", () => document.getElementById("thu-num").innerHTML= "")
+      fri.addEventListener("mouseover", () => document.getElementById("fri-num").innerHTML= "$$$")
+      fri.addEventListener("mouseleave", () => document.getElementById("fri-num").innerHTML= "")
+      sat.addEventListener("mouseover", () => document.getElementById("sat-num").innerHTML= "$$$")
+      sat.addEventListener("mouseleave", () => document.getElementById("sat-num").innerHTML= "")
+      sun.addEventListener("mouseover", () => document.getElementById("sun-num").innerHTML= "$$$")
+      sun.addEventListener("mouseleave", () => document.getElementById("sun-num").innerHTML= "")
+    }
+    sortData();
+
+  </script>
 </body>
 </html>
