@@ -34,12 +34,28 @@
       align-items: center;
     }
 
-    .circle {
+    .shapes {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .white-circle {
+      border-radius: 50%;
+      border: solid 2px white;
+      height:44px;
+      width:44px;
+      position: relative;
+      right: -20px;
+    }
+
+    .brown-circle {
       border-radius: 50%;
       background-color: rgb(65, 9, 9);
       height:50px;
       width:50px;
+      
     }
+
     .chart {
       background-color: white;
       padding: 20px;
@@ -136,7 +152,10 @@
   <div class="container">
     <div class="balance">
       <h5>My balance <br><span>$921.48</span></h5>
-      <div class="circle"></div>
+      <div class="shapes">
+        <div class="white-circle"></div>
+        <div class="brown-circle"></div>
+      </div>
     </div>
     <div class="chart">
       <h2>Spending - Last 7 days</h2>
