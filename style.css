@@ -127,4 +127,9 @@ footer {
         .container {
           width:330px;
         }
-    }
+      }
+      @media screen and (min-width: 1440px) {
+        .container {
+            width: 30%;
+        }
+      }
