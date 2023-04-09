@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/er1927/fem-expenses-chart
-- Live Site URL: https://er1927.github.io/fem-expenses-chart/ (gh-pages doesn't show the bar chart- working on moving this site to Vercel/Netlify)
+- Live Site URL: https://fem-expenses-chart-seven.vercel.app/ (Disclaimer: There is a gh-pages site deployed, but doesn't show the bar chart, please refer to the Vercel version for a working online site)
 
 ## My process
 
