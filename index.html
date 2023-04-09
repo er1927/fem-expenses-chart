@@ -86,6 +86,12 @@
       align-self: center;
     }
 
+    .bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     span {
       font-size: 20px;
       line-height: 30px; 
@@ -124,13 +130,13 @@
     <div class="chart">
       <h2>Spending - Last 7 days</h2>
       <div class="bar-chart">
-        <div><label id="mon-num"></label><div id="column-mon"></div><p id="mon">mon</p></div>
-        <div><label id="tue-num"></label><div id="column-tue"></div><p id="tue">tue</p></div>
-        <div><label id="wed-num"></label><div id="column-wed"></div><p id="wed">wed</p></div>
-        <div><label id="thu-num"></label><div id="column-thu"></div><p id="thu">thu</p></div>
-        <div><label id="fri-num"></label><div id="column-fri"></div><p id="fri">fri</p></div>
-        <div><label id="sat-num"></label><div id="column-sat"></div><p id="sat">sat</p></div>
-        <div><label id="sun-num"></label><div id="column-sun"></div><p id="sun">sun</p></div>
+        <div class="bar"><label id="mon-num"></label><div id="column-mon"></div><p id="mon">mon</p></div>
+        <div class="bar"><label id="tue-num"></label><div id="column-tue"></div><p id="tue">tue</p></div>
+        <div class="bar"><label id="wed-num"></label><div id="column-wed"></div><p id="wed">wed</p></div>
+        <div class="bar"><label id="thu-num"></label><div id="column-thu"></div><p id="thu">thu</p></div>
+        <div class="bar"><label id="fri-num"></label><div id="column-fri"></div><p id="fri">fri</p></div>
+        <div class="bar"><label id="sat-num"></label><div id="column-sat"></div><p id="sat">sat</p></div>
+        <div class="bar"><label id="sun-num"></label><div id="column-sun"></div><p id="sun">sun</p></div>
       </div>
       <div class="metrics">
         <div class="total">
