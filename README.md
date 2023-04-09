@@ -29,21 +29,19 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/images/solution.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/er1927/fem-expenses-chart
+- Live Site URL: https://er1927.github.io/fem-expenses-chart/ (gh-pages doesn't show the bar chart- working on moving this site to Vercel/Netlify)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 
