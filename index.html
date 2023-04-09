@@ -25,12 +25,21 @@
     .balance {
       background-color: rgb(250, 134, 134);
       border-radius: 10px;
-      padding:20px;
+      padding: 0 20px;
       margin:10px;
       color:white;
       font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
+    .circle {
+      border-radius: 50%;
+      background-color: rgb(65, 9, 9);
+      height:50px;
+      width:50px;
+    }
     .chart {
       background-color: white;
       padding: 20px;
@@ -127,6 +136,7 @@
   <div class="container">
     <div class="balance">
       <h5>My balance <br><span>$921.48</span></h5>
+      <div class="circle"></div>
     </div>
     <div class="chart">
       <h2>Spending - Last 7 days</h2>
