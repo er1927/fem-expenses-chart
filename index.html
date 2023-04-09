@@ -11,9 +11,9 @@
   <title>Frontend Mentor | Expenses chart component</title>
 
   <style>
-    * {
+    /* * {
       outline: dotted 2px teal;
-    }
+    } */
     body {
       font-size: 16px;
       font-family: "DM Sans";
@@ -48,7 +48,6 @@
       font-size: 15px;
       color:gray;
       height:250px;
-      /* width:fit-content; */
       align-items: flex-end;
     }
 
@@ -195,13 +194,13 @@
       sortData();
 
       function assignData() {
-      columnMon.style.height = "50px";
-      columnTue.style.height = "70px";
-      columnWed.style.height = "80px";
-      columnThu.style.height = "30px";
-      columnFri.style.height = "10px";
-      columnSat.style.height = "30px";
-      columnSun.style.height = "50px";
+      columnMon.style.height = (parseInt(data[0]["amount"]) + "px");
+      columnTue.style.height = (parseInt(data[1]["amount"]) + "px");;
+      columnWed.style.height = (parseInt(data[2]["amount"]) + "px");;
+      columnThu.style.height = (parseInt(data[3]["amount"]) + "px");;
+      columnFri.style.height = (parseInt(data[4]["amount"]) + "px");;
+      columnSat.style.height = (parseInt(data[5]["amount"]) + "px");;
+      columnSun.style.height = (parseInt(data[6]["amount"]) + "px");;
       }
       assignData();
     };
