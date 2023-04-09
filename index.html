@@ -18,7 +18,7 @@
       font-size: 16px;
       font-family: "DM Sans";
       margin:20px;
-      background-color: rgb(245, 211, 150);
+      background-color: rgb(252, 237, 210);
       color:rgb(65, 9, 9);
     }
 
@@ -47,7 +47,7 @@
       justify-content: center;
       font-size: 15px;
       color:gray;
-      height:250px;
+      height:140px;
       align-items: flex-end;
     }
 
@@ -194,21 +194,17 @@
       sortData();
 
       function assignData() {
-      columnMon.style.height = (parseInt(data[0]["amount"]) + "px");
-      columnTue.style.height = (parseInt(data[1]["amount"]) + "px");;
-      columnWed.style.height = (parseInt(data[2]["amount"]) + "px");;
-      columnThu.style.height = (parseInt(data[3]["amount"]) + "px");;
-      columnFri.style.height = (parseInt(data[4]["amount"]) + "px");;
-      columnSat.style.height = (parseInt(data[5]["amount"]) + "px");;
-      columnSun.style.height = (parseInt(data[6]["amount"]) + "px");;
-      }
+        columnMon.style.height = (parseInt(data[0]["amount"]) + "px");
+        columnTue.style.height = (parseInt(data[1]["amount"]) + "px");;
+        columnWed.style.height = (parseInt(data[2]["amount"]) + "px");;
+        columnThu.style.height = (parseInt(data[3]["amount"]) + "px");;
+        columnFri.style.height = (parseInt(data[4]["amount"]) + "px");;
+        columnSat.style.height = (parseInt(data[5]["amount"]) + "px");;
+        columnSun.style.height = (parseInt(data[6]["amount"]) + "px");;
+        }
       assignData();
     };
-    
-    getData();
-    
-    
-    
+    getData();   
 
   </script>
 </body>
