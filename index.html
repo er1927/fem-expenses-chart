@@ -82,7 +82,7 @@
     #column-sat, 
     #column-sun {
       background-color:rgb(250, 134, 134);
-      width:20px;
+      width:25px;
       align-self: center;
     }
 
@@ -91,7 +91,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 10px 0;
     }
+
     span {
       font-size: 20px;
       line-height: 30px; 
@@ -130,13 +132,13 @@
     <div class="chart">
       <h2>Spending - Last 7 days</h2>
       <div class="bar-chart">
-        <div class="bar"><label id="mon-num"></label><div id="column-mon"></div><p id="mon">mon</p></div>
-        <div class="bar"><label id="tue-num"></label><div id="column-tue"></div><p id="tue">tue</p></div>
-        <div class="bar"><label id="wed-num"></label><div id="column-wed"></div><p id="wed">wed</p></div>
-        <div class="bar"><label id="thu-num"></label><div id="column-thu"></div><p id="thu">thu</p></div>
-        <div class="bar"><label id="fri-num"></label><div id="column-fri"></div><p id="fri">fri</p></div>
-        <div class="bar"><label id="sat-num"></label><div id="column-sat"></div><p id="sat">sat</p></div>
-        <div class="bar"><label id="sun-num"></label><div id="column-sun"></div><p id="sun">sun</p></div>
+        <div class="bar" id="mon"><label id="mon-num"></label><br><div id="column-mon"></div><p >mon</p></div>
+        <div class="bar" id="tue"><label id="tue-num"></label><br><div id="column-tue"></div><p>tue</p></div>
+        <div class="bar" id="wed"><label id="wed-num"></label><br><div id="column-wed"></div><p>wed</p></div>
+        <div class="bar" id="thu"><label id="thu-num"></label><br><div id="column-thu"></div><p>thu</p></div>
+        <div class="bar" id="fri"><label id="fri-num"></label><br><div id="column-fri"></div><p>fri</p></div>
+        <div class="bar" id="sat"><label id="sat-num"></label><br><div id="column-sat"></div><p>sat</p></div>
+        <div class="bar" id="sun"><label id="sun-num"></label><br><div id="column-sun"></div><p>sun</p></div>
       </div>
       <div class="metrics">
         <div class="total">
